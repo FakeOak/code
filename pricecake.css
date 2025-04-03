@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fff;
+    color: #333;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #95b3db;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.logo {
+    color: #fbf6ef;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+
+.nav-menu{
+            
+    background: #c4ddfd;
+    
+}
+ 
+.nav-menu button {
+    background: #c4ddfd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 15px;
+    border-radius: 25px;
+    margin-left: 20px; /* Reduce margin for better alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.nav-menu button:hover {
+    background: white;
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-menu button h3 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-menu button:hover h3 {
+    color: black;
+}
+
+.nav-menu button h3 {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.nav-menu button:hover h3 {
+    color: white;
+}
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.header-icons {
+    color: #fbf6ef;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.cake-section {
+    padding: 20px;
+}
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cake-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* แสดง 3 คอลัมน์ */
+    gap: 25px; /* Increase gap for better spacing between items */
+}
+.cake-item {
+    background-color: #fbf6ef;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+    border: 1px solid #ddd; /* เพิ่มเส้นขอบ */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px; /* เพิ่ม padding */
+    transition: transform 0.3s ease; /* เพิ่มเอฟเฟกต์ hover */
+    margin-bottom: 15px; /* Add margin for better spacing */
+}
+.cake-item:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ hover */
+}
+.cake-item img {
+    width: 100%;
+    height: 200px; /* ปรับขนาดภาพให้เหมาะสม */
+    object-fit: cover;
+}
+.cake-details {
+    padding: 10px;
+}
+.cake-price {
+    font-weight: bold;
+    color: black;
+}
+.order-btn {
+    background-color: #95b3db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+#cart-dropdown .cart-item {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+#cart-dropdown .cart-total {
+    color: #333;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+#cart-icon {
+    position: relative;
+}
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+.cart-item-quantity button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2px 6px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.detell{
+  border-style: none;
+  background-color: #fbf6ef;
+  color: #95b3db;
+}
+
+
+
+
+
+
+
+

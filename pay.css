@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #fff;
+    color: #333;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #95b3db;
+    padding: 10px 20px;
+    justify-content: space-between;
+}
+.logo {
+    color: #fbf6ef;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+
+.nav-menu{
+            
+    background: #c4ddfd;
+    
+}
+ 
+.nav-menu button {
+    background: #c4ddfd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 15px;
+    border-radius: 25px;
+    margin-left: 20px; /* Reduce margin for better alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
+.nav-menu button:hover {
+    background: white;
+    color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-menu button h3 {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-menu button:hover h3 {
+    color: black;
+}
+
+.nav-menu button h3 {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.nav-menu button:hover h3 {
+    color: white;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+}
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+.header-icons {
+    color: #fbf6ef;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.cake-section {
+    padding: 20px;
+}
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.cake-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+.cake-item {
+    background-color: #fbf6ef;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
+    border: 1px solid #fbf6ef;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+.cake-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.cake-details {
+    padding: 10px;
+}
+.cake-price {
+    font-weight: bold;
+    color: black;
+}
+.order-btn {
+    background-color: #95b3db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#cart-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+#cart-dropdown .cart-item {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+#cart-dropdown .cart-total {
+    color: #333;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+#cart-icon {
+    position: relative;
+}
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+.cart-item-quantity button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 2px 6px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.detell{
+  border-style: none;
+  background-color: #fbf6ef;
+  color: #95b3db;
+}
+
+
+
+
+
+
+
+
+
+
+.payment-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    z-index: 100;
+    padding: 25px; /* Increase padding for better spacing */
+}
+
+.modal-header {
+    background-color: #a2c0e0;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.payment-options {
+    padding: 20px;
+    margin-bottom: 20px; /* Add spacing below options */
+}
+
+.payment-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    background-color: #fffdf8;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.option-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.radio-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #b02e26;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 10px 0;
+}
+
+.order-summary {
+    padding: 0 20px 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.payment-button {
+    background-color: #a2c0e0;
+    color: white;
+    border: none;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+}
+
+.payment-button:hover {
+    background-color: #8fb0d5;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+.qr-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    margin: 0 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.qr-container img {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+}
+
+.qr-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.qr-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}

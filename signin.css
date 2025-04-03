@@ -1,0 +1,46 @@
+
+body {
+    background-color: #fbf6ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+.login-container {
+    background: linear-gradient(to bottom, #fff1f5, #ffffff);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="%23FFD1DC"/><path d="M25 50 Q50 30, 75 50 T125 50" stroke="%23Brown" fill="none"/></svg>') no-repeat center;
+    background-size: cover;
+}
+.input-field {
+    background-color: #fff3f7;
+    border: 1px solid #FFB6C1;
+    transition: all 0.3s ease;
+}
+.input-field:focus {
+    outline: none;
+    border-color: #FFB6C1;
+    box-shadow: 0 0 5px rgba(255,105,180,0.5);
+}
+.login-btn {
+    background: linear-gradient(to right, #FF69B4, #FFB6C1);
+    transition: transform 0.2s ease;
+}
+.login-btnn {
+    background: linear-gradient(to right, #FF69B4, #FFB6C1);
+    transition: transform 0.2s ease;
+}
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+.text-pink-600{
+    color: #95b3db;
+}
